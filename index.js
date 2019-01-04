@@ -64,7 +64,7 @@ httpServer.listen(port, function() {
 
 var handlers = {};
 
-handlers.sample = function (data, callback) {
+handlers.hello = function (data, callback) {
   callback(200, {'Welcome Message': 'Happy 2019!'});
 };
 
@@ -73,5 +73,5 @@ handlers.notFound = function (data, callback) {
 };
 
 var router = {
-  'sample': handlers.sample
+  'hello': handlers.hello
 };
